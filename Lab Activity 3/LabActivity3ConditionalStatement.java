@@ -23,14 +23,15 @@ class LabActivity3ConditionalStatement {
         System.out.print("Enter your role code (1-Manager, 2-Supervisor, 3-Staff, 4-Intern): ");
         int role = myObj.nextInt();
 
+        // Constants
+        final float GOV_BENEFIT = 1500; // Government-mandated benefit deduction
+
         //Salary Computation
         float dailysalary = (float) (hoursworked * hourlywage); //typecast to convert double into float
         float roundeddaily = Math.round(dailysalary);
         float weeklysalary = (roundeddaily * 5);
         float monthlysalary = (weeklysalary * 4);
         float grossyearlysalary = (monthlysalary * 12);
-        
-        //Ternary Operators
         
         //Minors and Senior Citizens
         System.out.println((age < 18) ? "Minors are not allowed" : (age >= 65) ? "Senior Citizens are not allowed" : "");
@@ -45,9 +46,9 @@ class LabActivity3ConditionalStatement {
         if (grossyearlysalary > 250000) {
             float gys32 = (float) (grossyearlysalary * 0.32); //typecast to allow multiplication of decimal
             float gystaxed = (grossyearlysalary - gys32);
-            netyearlysalary = (gystaxed - 1500);
+            netyearlysalary = (gystaxed - GOV_BENEFIT);
         } else {
-            netyearlysalary = (grossyearlysalary - 1500);
+            netyearlysalary = (grossyearlysalary - GOV_BENEFIT);
         }
         
         
