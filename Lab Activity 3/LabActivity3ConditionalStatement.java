@@ -40,7 +40,7 @@ class LabActivity3ConditionalStatement {
         System.out.println((hoursworked > 24) ? "Number of hours worked cannot exceed 24 hours" : (hoursworked == 0) ? "Wrong input on daily work hours" : "");
         if (hoursworked > 24 || hoursworked == 0) System.exit(0);
         
-        //Yearly salary tax
+        //Apply Tax Deduction if salary > 250,000
         float netyearlysalary;
         if (grossyearlysalary > 250000) {
             float gys32 = (float) (grossyearlysalary * 0.32); //typecast to allow multiplication of decimal
