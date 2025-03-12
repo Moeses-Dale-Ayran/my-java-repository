@@ -23,7 +23,7 @@ class LabActivity3ConditionalStatement {
         System.out.print("Enter your role code (1-Manager, 2-Supervisor, 3-Staff, 4-Intern): ");
         int role = myObj.nextInt();
 
-        //Computations for salaries
+        //Salary Computation
         float dailysalary = (float) (hoursworked * hourlywage); //typecast to convert double into float
         float roundeddaily = Math.round(dailysalary);
         float weeklysalary = (roundeddaily * 5);
@@ -60,7 +60,7 @@ class LabActivity3ConditionalStatement {
             default -> "Undefined";
         };
                 
-        //Output Input by User
+        //Output Employee Information
         System.out.println(" ");
         System.out.println("Employee Information");
         System.out.println("---------------------");
