@@ -1,3 +1,4 @@
+
 import java.util.Scanner; //Import Scanner class
 
 class LabActivity3ConditionalStatement {
@@ -12,10 +13,18 @@ class LabActivity3ConditionalStatement {
         String lastname = myObj.nextLine();
         
         System.out.print("Enter your age: ");
-        int age = myObj.nextInt();        
+        int age = myObj.nextInt();  
+        
+        //Minors and Senior Citizens
+        System.out.print((age < 18) ? "Minors are not allowed" : (age >= 65) ? "Senior Citizens are not allowed" : "");
+        if (age < 18 || age >= 65) System.exit(0);
         
         System.out.print("Enter hours worked: ");
-        double hoursworked = myObj.nextDouble();       
+        double hoursworked = myObj.nextDouble();  
+
+        //Hours worked
+        System.out.print((hoursworked > 24) ? "Number of hours worked cannot exceed 24 hours" : (hoursworked == 0) ? "Wrong input on daily work hours" : "");
+        if (hoursworked > 24 || hoursworked == 0) System.exit(0);
         
         System.out.print("Enter hourly wage: ");
         float hourlywage = myObj.nextFloat();     
@@ -33,14 +42,6 @@ class LabActivity3ConditionalStatement {
         float monthlysalary = (weeklysalary * 4);
         float grossyearlysalary = (monthlysalary * 12);
         
-        //Minors and Senior Citizens
-        System.out.println((age < 18) ? "Minors are not allowed" : (age >= 65) ? "Senior Citizens are not allowed" : "");
-        if (age < 18 || age >= 65) System.exit(0);
-        
-        //Hours worked
-        System.out.println((hoursworked > 24) ? "Number of hours worked cannot exceed 24 hours" : (hoursworked == 0) ? "Wrong input on daily work hours" : "");
-        if (hoursworked > 24 || hoursworked == 0) System.exit(0);
-        
         //Apply Tax Deduction if salary > 250,000
         float netyearlysalary;
         if (grossyearlysalary > 250000) {
@@ -50,7 +51,6 @@ class LabActivity3ConditionalStatement {
         } else {
             netyearlysalary = (grossyearlysalary - GOV_BENEFIT);
         }
-        
         
         //Switch case for Roles
         String position = switch (role) {
