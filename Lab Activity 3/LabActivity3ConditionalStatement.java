@@ -1,4 +1,3 @@
-
 import java.util.Scanner; //Import Scanner class
 
 class LabActivity3ConditionalStatement {
