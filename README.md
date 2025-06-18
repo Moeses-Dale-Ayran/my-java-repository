@@ -5,6 +5,7 @@ This README provides a summary of each Java lab activity completed as part of th
 ---
 
 Lab Activity 1: Employee Information System
+
 Filename: LabActivity1EmployeeInformationSystem.java
 
 A basic Java console program that asks the user for their name, age, hours worked, and hourly wage. It then calculates and displays the employee's full name, age, and daily salary.
@@ -17,6 +18,7 @@ Key Features:
 ---
 
 Lab Activity 2: Employee Information System Part 2
+
 Filename: LabActivity2EmployeeInformationSystemPart2.java
 
 An extended version of Lab Activity 1 that includes additional computations such as:
@@ -34,6 +36,7 @@ Key Features:
 ---
 
 Lab Activity 3: Conditional Statement with Role and Salary
+
 Filename: LabActivity3ConditionalStatement.java
 
 A Java console application that calculates employee salaries with role-based classification and age/hour validation. It uses conditional logic and switch statements to assign roles and reject invalid inputs.
@@ -48,6 +51,7 @@ Key Features:
 ---
 
 Lab Activity 4: Employee Info System with GUI
+
 Filename: LabActivity4EmpInfoSystemGUI.java
 
 A Java GUI application using AWT components that collects employee information through text fields and displays the results in a text area. Includes validations and salary computation.
@@ -61,6 +65,7 @@ Key Features:
 ---
 
 Lab Activity 5: Quiz App
+
 Filename: LabActivity5QuizAppAWT.java
 
 A Java-based multiple-choice quiz application using AWT components. Users answer a series of predefined questions and receive a score at the end.
@@ -75,6 +80,7 @@ Key Features:
 ---
 
 Lab Activity 6: To-Do List App
+
 Filename: LabActivity6SwingToDoList.java
 
 A Java Swing application that includes two windows: a viewer for displaying tasks in a table, and a form for adding new tasks. Tasks consist of a name, description, and status.
@@ -90,6 +96,7 @@ Key Features:
 ---
 
 Midterm Lab Exam: IT Ticket Processing System
+
 Filename: MyMidtermLabExam.java
 
 A console-based ticket management system that allows users to add, update, and view IT support tickets. Users can also generate a summary report.
@@ -104,6 +111,7 @@ Key Features:
 ---
 
 Final Lab Project: Basic Calculator with History
+
 Filename: calculator.java
 
 An advanced Java Swing-based calculator with extended arithmetic operations, real-time display, history tracking, and user-friendly features. It includes a clear history button and supports operations like square root, exponentiation, and modulo.
